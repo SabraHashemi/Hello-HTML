@@ -1,0 +1,94 @@
+/* h1 tags will be yellow text on white background with serif font*/ 
+h1{
+background: white;
+color: yellow;
+font-family:serif;
+margin-bottom:20px;
+}
+
+/*margin left class selector set 100 px left margin for h1 tags that have class="h1leftmargin" */
+.h1leftmargin{
+
+margin-left:100px;
+}
+
+/*margin bottom class selector set 30 px bottom margin for h1 tags that have class="h1bottommargin" */
+.h1bottommargin{
+
+margin-bottom:30px;
+}
+
+/* body contents will be gray text on pink background with sans-serif font*/ 
+body{
+background: pink;
+color: gray;
+font-family:sans-serif;
+
+}
+
+
+/* links will be red text */
+a{
+
+color: red;
+
+}
+
+/*when mouse selector go on a link these attribiutes emphesized on it for user, text black, background yellow and underlined removed*/
+a:hover{
+color:black;
+background:yellow;
+text-decoration: none;
+
+}
+
+/*indent class selector add 100px left margin */
+.indent{
+	margin-left:100px;
+}
+
+/*gap_below class selector add 150px bottom margin */
+.gap_below{
+	margin-bottom:150px;
+}
+
+/*greenlink:hover class selector for make linkes green with gray background when mouse selector go on a link that have this class */
+.greenlink:hover{
+color:green;
+background:gray;
+}
+
+/*when browser window width is atleast 600 px background turn red color*/
+@media (min-width:600px) {
+body{
+	background: red
+	}
+}
+
+/*when browser window width is atleast 1100 px background turn white color*/
+@media (min-width:1100px) {
+body{
+	background: white;
+	}
+}
+
+/*when browser window width is atleast 750 px each column with class="responsiveColumn" have 200 width*/
+@media (min-width:750px) {
+	.responsiveColumn{
+	display:inline-block;
+	width:200px;
+	border:1px solid black;
+
+}
+}
+
+/*when browser window width is atleast 1000 px each column with class="responsiveColumn" have 500 width*/
+@media (min-width:1000px) {
+	.responsiveColumn{
+	display:inline-block;
+	width:500px;
+	border:1px solid black;
+
+}
+}
+
